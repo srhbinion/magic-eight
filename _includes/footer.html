@@ -2,37 +2,39 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <h3 class="footer-heading">Feedback</h3>
+	<p>Feel free to send us your comments, suggestions, or connect with us.<br> We are new to code and are open to feedback. Thanks.</p>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+		  <p>{{ site.description }}</p>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
+		  <h4>Sarah Binion</h4>
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+        <ul class="social-media-list">
+		  <h4>Vince Bright</h4>
+          {% if site.github_username2 %}
+          <li>
+            {% include icon-github.html username=site.github_username2 %}
+          </li>
+          {% endif %}
+        </ul>
       </div>
     </div>
 
   </div>
-
+<script src="js/main.js"></script>	
 </footer>
