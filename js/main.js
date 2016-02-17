@@ -1,3 +1,5 @@
+window.onload function() {
+    
 //Randomizes answers on Click 
 
 $('.magicE').on('click', function () {
@@ -5,3 +7,4 @@ $('.magicE').on('click', function () {
     var randomValue = answer[Math.floor(answer.length * Math.random())];
     $('#wisdom').html(randomValue);
 });
+}; 
