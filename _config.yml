@@ -9,13 +9,11 @@
 title: Zoltar&#39;s Magic Answers
 
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Sample site using a random number generator activated by a click in jquery to operate the wisdom of Zoltar.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "magiceight.sarahbinion.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  srhbinion
+github_username2:  vince-bright
 
 # Build settings
 markdown: kramdown
