@@ -5,4 +5,5 @@ This is a jekyll project. More information to come.
 
 ### credits
 ---
-Sarah and Vincent
+[Sarah Binion](http://www.sarahbinion.com) and [Vincent Bright](https://github.com/vince-bright)
+
