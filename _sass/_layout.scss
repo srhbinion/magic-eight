@@ -5,9 +5,11 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+	background-color: #FD3A58;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+	width: 100%;
 }
 
 .site-title {
@@ -93,13 +95,13 @@
 }
 
 
-
 /**
  * Site footer
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+	background-color: #FD3A58;
 }
 
 .footer-heading {
@@ -172,7 +174,17 @@
 }
 
 .page-heading {
-    font-size: 20px;
+	font-family: "Source Sans Pro";
+	text-transform: uppercase;
+  	color: #fff;
+  	font-weight: 100 !important;
+  	font-size: 100px;
+  		-webkit-text-stroke: 5px #FD3A58;
+  	letter-spacing: 15px;
+  		-webkit-filter: drop-shadow(8px 10px 0 #98B5CC);
+  	text-align: center;
+  	line-height: $base-line-height;
+	margin: 4rem;
 }
 
 .post-list {
