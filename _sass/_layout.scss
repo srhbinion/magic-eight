@@ -109,6 +109,28 @@
     background: linear-gradient(#020022, #a9187b, #fabf42); /* Standard syntax (must be last) */
 }
 
+.page-directions {
+	color: aliceblue;
+	max-width: 400px;
+	margin: 0 25% 0 25% ;
+}
+
+.magicE{
+	background-color:transparent;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1.5px solid white;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin: 0 25% 0 33%;
+}
+
 .page-heading {
 	font-family: "Source Sans Pro";
 	text-transform: uppercase;
@@ -196,5 +218,3 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
-
