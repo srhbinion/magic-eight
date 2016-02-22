@@ -9,7 +9,7 @@
 title: Zoltar&#39;s Magic Answers
 
 description: > # this means to ignore newlines until "baseurl:"
-  Sample site using a random number generator activated by a click in jquery to operate the wisdom of Zoltar.
+  Send us your feed back. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "magiceight.sarahbinion.com" # the base hostname & protocol for your site
 github_username:  srhbinion
