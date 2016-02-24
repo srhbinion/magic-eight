@@ -8,24 +8,31 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+	/* fallback color */
+    background-color: $background-color;
+	background-image: linear-gradient(#020022 30%, #a9187b, #fabf42 95%);
+	min-height: 650px;
+	background-repeat: no-repeat;
+    background-position: center center;
+	/* 
+	background-color: -webkit-linear-gradient(#020022 0%, #a9187b 60%, #fabf42 100%); For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(#020022, #a9187b, #fabf42);  For Opera 11.1 to 12.0
+    background: -moz-linear-gradient(#020022, #a9187b, #fabf42); For Firefox 3.6 to 15
+    background: linear-gradient(#020022, #a9187b, #fabf42); Standard syntax (must be last) 
+	*/
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -37,8 +44,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -46,8 +51,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -59,8 +62,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -85,8 +86,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
-
-
 /**
  * Links
  */
@@ -104,8 +103,6 @@ a {
     }
 }
 
-
-
 /**
  * Blockquotes
  */
@@ -121,8 +118,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Code formatting
@@ -150,8 +145,6 @@ pre {
     }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -171,8 +164,6 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
-
 
 /**
  * Clearfix

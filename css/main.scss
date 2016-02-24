@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$base-font-family: "Source Sans Pro", Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 100;
 $small-font-size:  $base-font-size * 0.875;
@@ -15,9 +15,8 @@ $base-line-height: 1.2;
 $spacing-unit:     10px;
 
 $text-color:       #454545;
-$background-color: #f5f5f5;
+$background-color: #fabf42;
 $brand-color:      #22316C;
-
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
