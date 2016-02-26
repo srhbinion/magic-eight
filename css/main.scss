@@ -6,19 +6,19 @@
 
 
 // Our variables
-$base-font-family: "Source Sans Pro", Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 100;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-family: "Source Sans Pro", "helvetica", sans-serif;
+$base-font-size:   1em;
+$base-font-weight: 300;
+$small-font-size:  $base-font-size * 0.75;
 $base-line-height: 1.2;
 
-$spacing-unit:     10px;
+$spacing-unit:     1em;
 
 $text-color:       #454545;
 $background-color: #fabf42;
 $brand-color:      #22316C;
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: #d5d5d5;
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area

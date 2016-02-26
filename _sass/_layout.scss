@@ -2,23 +2,20 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-	background-color: #FD3A58;
-    // Positioning context for the mobile navigation icon
     position: fixed;
 	width: 100%;
-	height: 20px;
+	border-top: 1px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-dark;
+	background-color: $grey-color-light;
+	padding: 3px;
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+    font-size: 20px;
+    line-height: $base-line-height;
+    letter-spacing: 1px;
     float: center;
+	font-family: "Inknut Antiqua";
 
     &:visited {
         color: $grey-color-dark;
@@ -26,8 +23,8 @@
 }
 
 .site-nav {
+	
     float: right;
-    line-height: 56px;
 
     .menu-icon {
         display: none;
@@ -97,16 +94,35 @@
  * Page content
  */
 .home {
+	min-width: 300px;
+	overflow: scroll;
 }
 
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit;
+}
+
+.page-heading {
+	text-transform: uppercase;
+  	color: #ffffff;
+  	font-size: 20px;
+	/*dropshadow */
+  		-webkit-text-stroke: 1px #a9187b;
+  	letter-spacing:10px;
+  		-webkit-filter: drop-shadow(2px 2px 0 #a9187b);
+  	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+}
+
+.page-title{
+	
 }
 
 .page-directions {
-	color: #ffffff;
-	max-width: 400px;
-	margin: 0 25% 0 25% ;
+	color: $grey-color-light;
+	max-width: 550px;
+	margin: 0 15% 0 15% ;
 }
 
 .magicE{
@@ -120,21 +136,63 @@
 	color:#020022;
 	font-size:17px;
 	padding:10px 25px;
-	margin: 0 20% 0 25%;
+	margin: 0 35% 0 35%;
 }
 
-.page-heading {
-	font-family: "Rosewood Std", "Inknut Antiqua", "san serif";
+.wisdom {
+	margin: 5% 15% 0 15%;
 	text-transform: uppercase;
-  	color: papayawhip;
-  	font-size: 75px;
+  	color: #ffffff;
+  	font-size: 20px;
 	/*dropshadow */
-  		-webkit-text-stroke: 1.5px #020022;
+  		-webkit-text-stroke: 1px #a9187b;
   	letter-spacing:10px;
-  		-webkit-filter: drop-shadow(5px 4px 0 #020022);
-  	text-align: center;
-  	line-height: $base-line-height;
-	margin: 4rem;
+  		-webkit-filter: drop-shadow(2px 2px 0 #a9187b);
+}
+
+/**
+* Button
+*/
+.round {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;		
+	text-align: center;
+	font-size: 20px;		
+	text-shadow: 0 1px 0 rgba(255,255,255,.7);	
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+	box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+	border-radius: 300px;
+	z-index: 1;
+	border-width: 4px;
+	border-style: solid;
+	&:hover {
+		width: 25%;
+		height: 25%;
+		left: -15%;
+		top: -15%;
+		font-size: 33px;
+		padding-top: 38px;
+		-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		z-index: 2;
+		border-size: 10px;
+		-webkit-transform: rotate(-360deg);
+		-moz-transform: rotate(-360deg);
+		-o-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
 }
 
 /**
@@ -143,49 +201,44 @@
 
 .site-footer {
 	position: fixed;
-	left: 0px;
 	bottom: 0px;
-	width: 100%;
-    color: #3D3D3D;
+	width: 105%;
 }
 
 .ferris {
+	position: relative;
 	background-image: url(../assets/AMUSEMENT.png);
 	height: 500px;
 	width: 100%;
-	/* 
-	position: relative;
-    min-height: 600px;
-    bottom: 0px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-	*/
-
 }
 
 .footer-col-wrapper {
-    padding-bottom: $spacing-unit * 2;
+	padding: $spacing-unit * 4;
+    padding-bottom: $spacing-unit;
 	padding-top: $spacing-unit;
-	background-color: #FD3A58;
-	color: #d5d5d5;
-	font-size: 18px;
-	font-weight: 700;
-	width: 100%;
+	margin-left: -$spacing-unit / 2;
+	background-color: #171724;
+	color: $grey-color-light;
+	font-size: .75em;
+    @extend %clearfix;
 }
 
 .contact-list,
 .social-media-list {
     list-style: none;
-    margin-left: 0;
-	color:#A6A6A6;
-	font-size: 1em;
+	margin-right: 10px;
+	color: #fabf42;
+	font-family: "helvetica", sans-serif;
 }
 
-.footer-col-wrapper {
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+.footer-heading {
+	color: #fabf42;
+}
 
+.username {
+    margin-left: 10px;
+	margin-right: 10px;
+	color:#A6A6A6;
 }
 
 .footer-col {
@@ -211,12 +264,12 @@
 
 @include media-query($on-laptop) {
     .footer-col-1,
-    .footer-col-2 {
+	.footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         width:         calc(50% - (#{$spacing-unit} / 2));
     }
-
-    .footer-col-3 {
+    
+	.footer-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
