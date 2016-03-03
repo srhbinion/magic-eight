@@ -2,7 +2,7 @@
  * Site header
  */
 .theAsk{
-	max-width:300px;
+	max-width:400px;
 }
 
 .site-header {
@@ -144,7 +144,11 @@
 }
 
 .wisdom {
-	margin: 5% 15% 0 15%;
+	position: fixed;
+	left: 700px;
+	top: 300px;
+	min-width: 200px;
+	min-height: 100px;
 	text-transform: uppercase;
   	color: #ffffff;
   	font-size: 20px;
